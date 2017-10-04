@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
-import { CloudinaryContext, Transformation, Image } from "cloudinary-react";
-import { ShareButtons, generateShareIcon, ShareCounts } from 'react-share';
+import { CloudinaryContext, Image } from "cloudinary-react";
+import { ShareButtons } from 'react-share';
 import axios from 'axios';
 
-import { isLoggedIn } from '../utils/AuthService';
+// import { isLoggedIn } from '../utils/AuthService';
 
 import Nav from './Nav';
 

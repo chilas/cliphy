@@ -6,7 +6,7 @@ const ACCESS_TOKEN_KEY = 'access_token';
 
 const CLIENT_ID = 'NMb93xcWlImYn4WTottBA94bpZewIyCQ';
 const CLIENT_DOMAIN = 'chilas.eu.auth0.com';
-const REDIRECT = 'http://localhost:3000/callback';
+const REDIRECT = 'https://cliphy.herokuapp.com/callback';
 const SCOPE = 'full:access';
 const AUDIENCE = 'https://chilas.eu.auth0.com/userinfo';
 

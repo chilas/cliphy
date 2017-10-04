@@ -31,13 +31,12 @@ class Create extends Component {
             theme: 'minimal',
         }
         uploadWidget(cloudinarySettings, (res) => {
-            let result = res;
-            if (result[0] !== undefined) {
-                console.log("public_id:", result[0].public_id)
+            if (res && res[0] !== undefined) {
+                console.log("public_id:", res[0].public_id)
                 this.setState({ isResult: true });
-                this.setGifString(result[0].public_id);
+                this.setGifString(res[0].public_id);
             }
-            console.log(result);
+            console.log(res);
         });
 
     }
@@ -79,7 +78,7 @@ class Create extends Component {
                         <div className="panel-body">
                             {
                                 (this.state.isResult) ?
-                                    <img className="img-responsive" src={this.state.gifUrl}></img> : <span className="label label-info">Kindly upload an mp4 video to create Gif</span>
+                                    <img alt="" className="img-responsive" src={this.state.gifUrl}></img> : <span className="label label-info">Kindly upload an mp4 video to create Gif</span>
                             }
                         </div>
                         <div className="panel-footer">

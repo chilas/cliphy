@@ -19,7 +19,7 @@ class Dashboard extends Component {
     };
 
     getGifs() {
-        axios.get('http://res.cloudinary.com/chilas/image/list/cliphy.json')
+        axios.get('https://res.cloudinary.com/chilas/image/list/cliphy.json')
             .then(res => {
                 this.setState({ gifs: res.data.resources })
             });
@@ -50,11 +50,11 @@ class Dashboard extends Component {
                                             Share on:
                                             <TwitterShareButton className="label label-info"
                                                 title={"Cliphy"}
-                                                url={`http://res.cloudinary.com/chilas/image/upload/${data.public_id}.gif`}>
+                                                url={`https://res.cloudinary.com/chilas/image/upload/${data.public_id}.gif`}>
                                                 Twitter
                                             </TwitterShareButton>
                                             <FacebookShareButton className="label label-default"
-                                                url={`http://res.cloudinary.com/chilas/image/upload/${data.public_id}.gif`}>
+                                                url={`https://res.cloudinary.com/chilas/image/upload/${data.public_id}.gif`}>
                                                 Facebook
                                             </FacebookShareButton>
 
